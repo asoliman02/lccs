@@ -42,12 +42,140 @@ with open(dirty_report, 'r') as infile, open(cleaned_report, 'w', newline='') as
 print(f"Cleaned data has been written to {cleaned_report}")
 print(cleaned_report)
 
+L = [2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 3, 1, 3, 3, 2, 2, 3, 3, 1, 3, 3, 3, 2, 1, 3]
+# Build up a list of unique values
+unique_values = []
+for value in L:
+    if value not in unique_values:
+        unique_values.append(value)
+
+
+# Build up a list of frequencies
+frequencies = []
+for value in unique_values:
+    frequency = L.count(value)
+    frequencies.append(frequency)
+
+
+# Find the mode
+max_frequency = max(frequencies)
+max_frequency_pos = frequencies.index(max_frequency)
+mode = unique_values[max_frequency_pos]
+
+L = [2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 3, 1, 3, 3, 2, 2, 3, 3, 1, 3, 3, 3, 2, 1, 3]
+# Build up a list of unique values
+unique_values = []
+for value in L:
+    if value not in unique_values:
+        unique_values.append(value)
+
+
+# Build up a list of frequencies
+frequencies = []
+for value in unique_values:
+    frequency = L.count(value)
+    frequencies.append(frequency)
+
+
+# Find the mode
+max_frequency = max(frequencies)
+max_frequency_pos = frequencies.index(max_frequency)
+mode = unique_values[max_frequency_pos]
+
+L = [2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 3, 1, 3, 3, 2, 2, 3, 3, 1, 3, 3, 3, 2, 1, 3]
+# Build up a list of unique values
+unique_values = []
+for value in L:
+    if value not in unique_values:
+        unique_values.append(value)
+
+
+# Build up a list of frequencies
+frequencies = []
+for value in unique_values:
+    frequency = L.count(value)
+    frequencies.append(frequency)
+
+
+# Find the mode
+max_frequency = max(frequencies)
+max_frequency_pos = frequencies.index(max_frequency)
+mode = unique_values[max_frequency_pos]
+
+
+
+L = [2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 3, 1, 3, 3, 2, 2, 3, 3, 1, 3, 3, 3, 2, 1, 3]
+# Build up a list of unique values
+unique_values = []
+for value in L:
+    if value not in unique_values:
+        unique_values.append(value)
+
+
+# Build up a list of frequencies
+frequencies = []
+for value in unique_values:
+    frequency = L.count(value)
+    frequencies.append(frequency)
+
+
+# Find the mode
+max_frequency = max(frequencies)
+max_frequency_pos = frequencies.index(max_frequency)
+mode = unique_values[max_frequency_pos]
+
+
+L = [2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 3, 1, 3, 3, 2, 2, 3, 3, 1, 3, 3, 3, 2, 1, 3]
+# Build up a list of unique values
+unique_values = []
+for value in L:
+    if value not in unique_values:
+        unique_values.append(value)
+
+
+# Build up a list of frequencies
+frequencies = []
+for value in unique_values:
+    frequency = L.count(value)
+    frequencies.append(frequency)
+
+
+# Find the mode
+max_frequency = max(frequencies)
+max_frequency_pos = frequencies.index(max_frequency)
+mode = unique_values[max_frequency_pos]
+
+
+L = [2, 2, 2, 3, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 3, 3, 1, 3, 3, 2, 2, 3, 3, 1, 3, 3, 3, 2, 1, 3]
+# Build up a list of unique values
+unique_values = []
+for value in L:
+    if value not in unique_values:
+        unique_values.append(value)
+
+
+# Build up a list of frequencies
+frequencies = []
+for value in unique_values:
+    frequency = L.count(value)
+    frequencies.append(frequency)
+
+
+# Find the mode
+max_frequency = max(frequencies)
+max_frequency_pos = frequencies.index(max_frequency)
+mode = unique_values[max_frequency_pos]
+
+
+
+'''
 df = pl.DataFrame (
-    
+   
     {"nrs": [1168,70,1078,48276,3211,90,18,0,3368,851,85,9,33829,22,2,4626,2157,2196,170839,3212,47990,1112,977,15,707,266,307,3151,847]
      "names": ["Rape (Including Attempted Rape)",'Firearms/Weapon/Possession Of Explosives/Ammunition','Drugs','Other','Sexual','Other','Murder','Threaten To Kill','Drugs','Firearms','Road Traffic','Theft','Larceny/Fraud/Robbery','Other','Possession Of Firearms/ Ammunition/Explosive Substances','Larceny/Fraud/Robbery','Public Order/Assault','Other','Road Traffic','Sexual','Other','Rape (Including Attempted Rape) Rape (Including Attempted Rape)','Drugs','Public Order','Sexual Offences','Theft/Fraud/Robbery Theft/Fraud/Robbery','Other','Drugs','Firearms/Weapon/Possession Of Explosives/Ammunition',]  
         }
     )
+'''
 '''
 app = Flask(__name__)  # Create a Flask app instance
 
@@ -67,7 +195,4 @@ if __name__ == "__main__":
      #                 max_fuel REAL,
       #                max_emissions REAL)''')
        # db.commit()
-     
-
-
 
