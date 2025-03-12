@@ -1,0 +1,13 @@
+const header = document.createElement("header");
+header.style.width = "100%";
+header.style.height = "200px"; // Adjust as needed
+header.style.background = "black"; // Optional background color
+header.style.display = "flex"; 
+header.style.justifyContent = "center"; 
+header.style.alignItems = "center";
+
+const img = document.createElement("img");
+img.src = "https://www.istockphoto.com/photo/gavel-and-justice-scale-gm1294453859-388444588"; 
+img.alt = "Header Image";
+img.style.width = "100%"; // Make it responsive
+img.style.height = "auto"; 
